@@ -183,8 +183,11 @@ INSERT INTO system_settings(setting_key,setting_value) VALUES
 ('email','parking@example.com'),
 ('operating_hours','6:00 AM - 10:00 PM');
 
--- Demo admin/staff credentials:
--- Password hashes below correspond to: Admin@123 / Staff@123
+-- Demo admin/staff/customer/customer1 credentials:
+-- Password hashes below correspond to: admin12345 / staff12345 / user12345 / customer12345 respectively.
+-- password_hashes generated using PHP's password_hash function with PASSWORD_BCRYPT algorithm.
 INSERT INTO users(full_name,email,phone,password_hash,role,status) VALUES
-('System Administrator','admin@parking.local','9800000000','$2y$12$60lrlZkNWU5KtoZRDgLyheVcs2n5.2yczQorxqDhNRpi/sgFaLTR2','admin','active'),
-('Parking Staff','staff@parking.local','9800000001','$2y$12$ILrTkIUFdyO1N4HaKN4HL.tnapvkUg5mrV9uwgIFdkzQlM6yv/XQ.','staff','active');
+('System Administrator','admin@gmail.com','9800000000','$2y$10$IFGJDHOH3GthWm/XbJFOYuBiuC/YNJSD4qOkNukoyil5BEtkEgTqu','admin','active'),
+('Parking Staff','staff@gmail.com','9800000001','$2y$10$Nn2.H93MO9rQiRfc6AusGeXyNDU3DBIvrjFwh/o6cQ6faY07Y04Gi','staff','active'),
+('Customer','customer@gmail.com','9800000002','$2y$10$9Nlc2TkOmkZC2/LcWA4w2eMTe4PJq4d7Rt6ud8y7GiK4eWe1Q7Jia','customer','active'),
+('Customer1','customer1@gmail.com','9800000003','$2y$10$9Nlc2TkOmkZC2/LcWA4w2eMTe4PJq4d7Rt6ud8y7GiK4eWe1Q7Jia','customer','active');
