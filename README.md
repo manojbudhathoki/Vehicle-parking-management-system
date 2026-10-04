@@ -307,7 +307,7 @@ Password: user12345
 
 Customer1
 Email: customer1@gmail.com
-Password: customer123451
+Password: customer12345
 ```
 
 For any deployment outside the academic/local environment, change or remove demo credentials and use secure account-management practices.
